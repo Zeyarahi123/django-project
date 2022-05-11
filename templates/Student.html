@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+
+
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <h3>Student Information</h3>
+    <th>full_name </th>
+    <th>father_name </th>
+    <th> mother_name </th>
+    <th>present_class</th>
+    <th>address  </th>
+    <th>marks </th>
+
+    {%for student in Students%}
+    <tr>
+        <td>{{student.full_name</td>
+        <td>{{student.father_name</td>
+        <td>{{student.mother_name</td>
+        <td>{{student.present_class</td>
+        <td>{{student.address</td>
+        <td>{{student.marks</td>
+    </tr>
+       {% endfor%}
+</table>
+
+</body>
+</html>

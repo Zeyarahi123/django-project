@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="Add_student" method="post">
+        <h2><i>Add students Details</i></h2>
+        {% csrf_token %}
+
+         <label for="Full Name"><b>Full_Name  : </b></label>
+        <input type="text" name="full_name" placeholder="Full Name"><br><br>
+
+         <label for="Mother Name"><b>Mother Name : </b></label>
+        <input type="text" name="mother_name" placeholder="Mother Name"><br><br>
+
+         <label for="Father Name"><b>Father Name :  </b></label>
+        <input type="text" name="father_name" placeholder="Father Name"><br><br>
+
+         <label for="Present class"><b>Present class:  </b></label>
+        <input type="number" name="password" placeholder="Present class"><br><br
+
+         <label for="Address"><b>Address:</b></label>
+        <input type="text" name="address" placeholder="Address"><br><br>
+
+         <label for="Marks"><b>Marks:</b></label>
+        <input type="number" name="address" placeholder="Marks"><br><br>
+
+
+
+        <input type="Submit">
+    <a href="Login.html">Login here</a>
+    </form>
+
+    <div>
+        {% for message in messages %}
+        <h3> {{message}}  </h3>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
